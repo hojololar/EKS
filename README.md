@@ -40,10 +40,11 @@ Save the above script as `eksctl.sh` then run `chmod +x eksctl.sh` and `sudo sh 
 
 1. Create a new Amazon EKS cluster using the `eksctl` command:
 
-eksctl create cluster --name my-eks-cluster --region us-east-1 --nodegroup-name my-nodegroup --node-type t2.small --nodes 3 --nodes-min 1 --nodes-max 5 --managed --spot
+```bash
+eksctl create cluster --name my-eks-cluster --region us-east-1 --nodegroup-name my-nodegroup --node-type t2.small --nodes 3 --nodes-min 1 --nodes-max 5 --managed
 ```
 
-#Replace `my-eks-cluster` and `us-east-1` with your preferred cluster name and AWS region.
+Replace `my-eks-cluster` and `us-east-1` with your preferred cluster name and AWS region.
 
 **Step 3: Deploying a Sample Application**
 
